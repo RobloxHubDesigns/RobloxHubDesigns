@@ -1,0 +1,390 @@
+local ScriptHubGui = Instance.new("ScreenGui")
+local ScriptHubMain = Instance.new("Frame")
+local ScriptHubTab = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local OpenButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Content = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local ButtonsHubFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local ButtonsHub = Instance.new("ScrollingFrame")
+local Content_2 = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Tab1 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ScriptsHub = Instance.new("Frame")
+local HomeFrame = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Player = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local PlayerImg = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local PlayerUsername = Instance.new("TextLabel")
+local Tab1Frame = Instance.new("Frame")
+local Toggle1 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Toggle = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local Button1 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Button2 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+
+--Properties:
+
+ScriptHubGui.Name = "ScriptHubGui"
+ScriptHubGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScriptHubGui.Enabled = false
+
+ScriptHubMain.Name = "ScriptHubMain"
+ScriptHubMain.Parent = ScriptHubGui
+ScriptHubMain.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+ScriptHubMain.BackgroundTransparency = 1.000
+ScriptHubMain.BorderSizePixel = 0
+ScriptHubMain.ClipsDescendants = true
+ScriptHubMain.Position = UDim2.new(0, 429, 0, 238)
+ScriptHubMain.Size = UDim2.new(0.466175377, 0, 0.491006166, 0)
+
+ScriptHubTab.Name = "ScriptHubTab"
+ScriptHubTab.Parent = ScriptHubMain
+ScriptHubTab.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ScriptHubTab.Size = UDim2.new(1, 0, 0.115492254, 0)
+ScriptHubTab.ZIndex = 9
+
+UICorner.Parent = ScriptHubTab
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = ScriptHubTab
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.Position = UDim2.new(0.953393757, 0, 0.206988901, 0)
+CloseButton.Size = UDim2.new(0.0466062985, 0, 0.586022198, 0)
+CloseButton.ZIndex = 10
+CloseButton.Font = Enum.Font.Gotham
+CloseButton.Text = "-"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+UICorner_2.Parent = CloseButton
+
+Title.Name = "Title"
+Title.Parent = ScriptHubTab
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0.382606626, 0, 1, 0)
+Title.ZIndex = 11
+Title.Font = Enum.Font.Gotham
+Title.Text = "Rose Hub | Exploits"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 33.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = ScriptHubTab
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundTransparency = 1.000
+OpenButton.Position = UDim2.new(0.905882478, 0, 0.206988901, 0)
+OpenButton.Size = UDim2.new(0.0466062985, 0, 0.586022198, 0)
+OpenButton.ZIndex = 10
+OpenButton.Font = Enum.Font.Gotham
+OpenButton.Text = "+"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextSize = 29.000
+OpenButton.TextWrapped = true
+
+UICorner_3.Parent = OpenButton
+
+Content.Name = "Content"
+Content.Parent = ScriptHubMain
+Content.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Content.Position = UDim2.new(0, 0, 0.115492254, 0)
+Content.Size = UDim2.new(1, 0, 0.884507775, 0)
+
+UICorner_4.Parent = Content
+
+ButtonsHubFrame.Name = "ButtonsHubFrame"
+ButtonsHubFrame.Parent = Content
+ButtonsHubFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ButtonsHubFrame.Size = UDim2.new(0.242986366, 0, 1, 0)
+
+UICorner_5.Parent = ButtonsHubFrame
+
+ButtonsHub.Name = "ButtonsHub"
+ButtonsHub.Parent = ButtonsHubFrame
+ButtonsHub.Active = true
+ButtonsHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonsHub.BackgroundTransparency = 1.000
+ButtonsHub.BorderSizePixel = 0
+ButtonsHub.Size = UDim2.new(1, 0, 1, 0)
+ButtonsHub.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+Content_2.Name = "Content"
+Content_2.Parent = ButtonsHub
+Content_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content_2.BackgroundTransparency = 1.000
+Content_2.Size = UDim2.new(1, 0, 1, 0)
+
+Home.Name = "Home"
+Home.Parent = Content_2
+Home.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Home.Position = UDim2.new(0.104283087, 0, 0.0135135129, 0)
+Home.Size = UDim2.new(0.791433811, 0, 0.0601965599, 0)
+Home.Font = Enum.Font.Gotham
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 25.000
+
+UICorner_6.Parent = Home
+
+Tab1.Name = "Tab1"
+Tab1.Parent = Content_2
+Tab1.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Tab1.Position = UDim2.new(0.104283087, 0, 0.0859950855, 0)
+Tab1.Size = UDim2.new(0.791433811, 0, 0.0601965599, 0)
+Tab1.Font = Enum.Font.Gotham
+Tab1.Text = "Tab1"
+Tab1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.TextSize = 25.000
+
+UICorner_7.Parent = Tab1
+
+ScriptsHub.Name = "ScriptsHub"
+ScriptsHub.Parent = Content
+ScriptsHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsHub.BackgroundTransparency = 1.000
+ScriptsHub.Position = UDim2.new(0.242986381, 0, 0, 0)
+ScriptsHub.Size = UDim2.new(0.757013559, 0, 1, 0)
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = ScriptsHub
+HomeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0, 0, -1, 0)
+HomeFrame.Size = UDim2.new(1, 0, 1, 0)
+
+Info.Name = "Info"
+Info.Parent = HomeFrame
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Size = UDim2.new(1, 0, 0.395577401, 0)
+Info.Font = Enum.Font.Gotham
+Info.Text = "Thank you for using this exploit/hub! I hope you enjoy and expect more in the future!"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 37.000
+Info.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = HomeFrame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.709671557, 0, 0.769041777, 0)
+Credits.Size = UDim2.new(0.288567424, 0, 0.100737102, 0)
+Credits.Font = Enum.Font.Gotham
+Credits.Text = "Please_NotSoPro"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 19.000
+Credits.TextWrapped = true
+
+Player.Name = "Player"
+Player.Parent = ScriptsHub
+Player.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Player.Position = UDim2.new(-0.0140877757, 0, 0.869778872, 0)
+Player.Size = UDim2.new(1.0140878, 0, 0.130221128, 0)
+
+UICorner_8.Parent = Player
+
+PlayerImg.Name = "PlayerImg"
+PlayerImg.Parent = Player
+PlayerImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImg.BackgroundTransparency = 1.000
+PlayerImg.Position = UDim2.new(0.0121555589, 0, 0, 0)
+PlayerImg.Size = UDim2.new(0.0970157236, 0, 1, 0)
+PlayerImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_9.CornerRadius = UDim.new(3, 0)
+UICorner_9.Parent = PlayerImg
+
+PlayerUsername.Name = "PlayerUsername"
+PlayerUsername.Parent = Player
+PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.BackgroundTransparency = 1.000
+PlayerUsername.Position = UDim2.new(0.225517362, 0, 0, 0)
+PlayerUsername.Size = UDim2.new(0.774482608, 0, 1, 0)
+PlayerUsername.Font = Enum.Font.Gotham
+PlayerUsername.Text = "N/A"
+PlayerUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.TextScaled = true
+PlayerUsername.TextSize = 14.000
+PlayerUsername.TextWrapped = true
+PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
+
+Tab1Frame.Name = "Tab1Frame"
+Tab1Frame.Parent = ScriptsHub
+Tab1Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1Frame.BackgroundTransparency = 1.000
+Tab1Frame.Position = UDim2.new(0, 0, -1, 0)
+Tab1Frame.Size = UDim2.new(1, 0, 0.869778872, 0)
+
+Toggle1.Name = "Toggle1"
+Toggle1.Parent = Tab1Frame
+Toggle1.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Toggle1.Position = UDim2.new(0.0405023545, 0, 0.0451977402, 0)
+Toggle1.Size = UDim2.new(0.918995321, 0, 0.107344642, 0)
+
+UICorner_10.Parent = Toggle1
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Toggle1
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.Position = UDim2.new(0.0134133482, 0, 0.131578937, 0)
+Toggle.Size = UDim2.new(0.0629819557, 0, 0.763157904, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(3, 0)
+UICorner_11.Parent = Toggle
+
+Title_2.Name = "Title"
+Title_2.Parent = Toggle1
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.0938934311, 0, 0, 0)
+Title_2.Size = UDim2.new(0.906106591, 0, 1, 0)
+Title_2.Font = Enum.Font.Gotham
+Title_2.Text = "Toggle"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 30.000
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Button1.Name = "Button1"
+Button1.Parent = Tab1Frame
+Button1.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Button1.Position = UDim2.new(0.0405023545, 0, 0.197740108, 0)
+Button1.Size = UDim2.new(0.339635581, 0, 0.110169493, 0)
+Button1.Font = Enum.Font.Gotham
+Button1.Text = "Button1"
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextSize = 32.000
+
+UICorner_12.Parent = Button1
+
+Button2.Name = "Button2"
+Button2.Parent = Tab1Frame
+Button2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Button2.Position = UDim2.new(0.619862139, 0, 0.197740108, 0)
+Button2.Size = UDim2.new(0.339635581, 0, 0.110169493, 0)
+Button2.Font = Enum.Font.Gotham
+Button2.Text = "Button2"
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextSize = 32.000
+
+UICorner_13.Parent = Button2
+
+-- Scripts:
+
+local function RUYEFS_fake_script() -- PlayerImg.UserProfile 
+	local script = Instance.new('LocalScript', PlayerImg)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local imageLabel = script.Parent
+	imageLabel.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(RUYEFS_fake_script)()
+local function NZRFC_fake_script() -- PlayerUsername.UserName 
+	local script = Instance.new('LocalScript', PlayerUsername)
+
+	local Frame = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	Frame.Text = player.Name
+end
+coroutine.wrap(NZRFC_fake_script)()
+local function MNTKO_fake_script() -- ScriptHubMain.Main 
+	local script = Instance.new('LocalScript', ScriptHubMain)
+
+	--Variables
+	
+	local Hub = script.Parent.Parent.Parent.ScriptHubGui
+	local window = script.Parent.Content
+	local closeButton = script.Parent.ScriptHubTab.CloseButton
+	local openButton = script.Parent.ScriptHubTab.OpenButton
+	local homeButton = script.Parent.Parent.ScriptHubMain.Content.ButtonsHubFrame.ButtonsHub.Content.Home
+	local Tab1Button = script.Parent.Parent.ScriptHubMain.Content.ButtonsHubFrame.ButtonsHub.Content.Tab1
+	local Home = script.Parent.Parent.ScriptHubMain.Content.ScriptsHub.HomeFrame
+	local Tab1 = script.Parent.Parent.ScriptHubMain.Content.ScriptsHub.Tab1Frame
+	
+	--Other
+	
+	closeButton.MouseButton1Click:Connect(function()
+		window:TweenPosition(UDim2.new(0, 0,-0.769, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	openButton.MouseButton1Click:Connect(function()
+		window:TweenPosition(UDim2.new(0, 0,0.115, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	homeButton.MouseButton1Click:Connect(function()
+		Home:TweenPosition(UDim2.new(0, 0,0, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+		Tab1:TweenPosition(UDim2.new(0, 0,-1, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	Tab1Button.MouseButton1Click:Connect(function()
+		Tab1:TweenPosition(UDim2.new(0, 0,0, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+		Home:TweenPosition(UDim2.new(0, 0,-1, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	Hub.Enabled = true
+end
+coroutine.wrap(MNTKO_fake_script)()
+local function BBCO_fake_script() -- ScriptHubMain.Draggable 
+	local script = Instance.new('LocalScript', ScriptHubMain)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.50
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(BBCO_fake_script)()
