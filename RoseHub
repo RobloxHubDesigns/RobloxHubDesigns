@@ -1,111 +1,73 @@
 -- Instances:
 
 local ScriptHubGui = Instance.new("ScreenGui")
+local Border = Instance.new("Frame")
 local ScriptHubFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TitlePlayer = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local PlayerImg = Instance.new("ImageLabel")
-local UICorner_3 = Instance.new("UICorner")
-local PlayerUsername = Instance.new("TextLabel")
-local Title = Instance.new("TextLabel")
 local ScriptsSection = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local Filler = Instance.new("Frame")
 local Buttons = Instance.new("Folder")
 local HomePageButton = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Script1Button = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local ScriptsMain = Instance.new("Frame")
 local Scripts = Instance.new("Folder")
 local HomePage = Instance.new("Frame")
 local Desc = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Title_Player = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local PlayerImg = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local PlayerUsername = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
 
 --Properties:
 
 ScriptHubGui.Name = "ScriptHubGui"
 ScriptHubGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
+Border.Name = "Border"
+Border.Parent = ScriptHubGui
+Border.AnchorPoint = Vector2.new(0.5, 0.5)
+Border.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Border.BackgroundTransparency = 1.000
+Border.ClipsDescendants = true
+Border.Position = UDim2.new(0.499644905, 0, 0.498323172, 0)
+Border.Size = UDim2.new(0.55400002, 0, 0.493000001, 0)
+
 ScriptHubFrame.Name = "ScriptHubFrame"
-ScriptHubFrame.Parent = ScriptHubGui
+ScriptHubFrame.Parent = Border
 ScriptHubFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 ScriptHubFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-ScriptHubFrame.Position = UDim2.new(0.499644905, 0, 0.499390244, 0)
-ScriptHubFrame.Size = UDim2.new(0.554421127, 0, 0.49314025, 0)
+ScriptHubFrame.Position = UDim2.new(0.499644905, 0, 0.498323172, 0)
+ScriptHubFrame.Size = UDim2.new(1, 0, 1, 0)
 
 UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = ScriptHubFrame
-
-TitlePlayer.Name = "Title+Player"
-TitlePlayer.Parent = ScriptHubFrame
-TitlePlayer.AnchorPoint = Vector2.new(0.5, 0.5)
-TitlePlayer.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-TitlePlayer.Position = UDim2.new(0.499919981, 0, 0.0714064911, 0)
-TitlePlayer.Size = UDim2.new(1, 0, 0.14497681, 0)
-
-UICorner_2.CornerRadius = UDim.new(0, 15)
-UICorner_2.Parent = TitlePlayer
-
-PlayerImg.Name = "PlayerImg"
-PlayerImg.Parent = TitlePlayer
-PlayerImg.AnchorPoint = Vector2.new(0.5, 0.5)
-PlayerImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerImg.BackgroundTransparency = 1.000
-PlayerImg.Position = UDim2.new(0.0493216515, 0, 0.49253732, 0)
-PlayerImg.Size = UDim2.new(0.0571774617, 0, 0.76119405, 0)
-PlayerImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-UICorner_3.CornerRadius = UDim.new(3, 0)
-UICorner_3.Parent = PlayerImg
-
-PlayerUsername.Name = "PlayerUsername"
-PlayerUsername.Parent = TitlePlayer
-PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
-PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUsername.BackgroundTransparency = 1.000
-PlayerUsername.Position = UDim2.new(0.542010367, 0, 0.386992961, 0)
-PlayerUsername.Size = UDim2.new(0.911792755, 0, 0.538380206, 0)
-PlayerUsername.Font = Enum.Font.Gotham
-PlayerUsername.Text = "N/A"
-PlayerUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUsername.TextScaled = true
-PlayerUsername.TextSize = 32.000
-PlayerUsername.TextWrapped = true
-PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
-
-Title.Name = "Title"
-Title.Parent = TitlePlayer
-Title.AnchorPoint = Vector2.new(0.5, 0.5)
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.155818626, 0, 0.701492548, 0)
-Title.Size = UDim2.new(0.140272155, 0, 0.347601146, 0)
-Title.Font = Enum.Font.Gotham
-Title.Text = "Rose Hub | Exploits"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
 
 ScriptsSection.Name = "ScriptsSection"
 ScriptsSection.Parent = ScriptHubFrame
 ScriptsSection.AnchorPoint = Vector2.new(0.5, 0.5)
 ScriptsSection.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-ScriptsSection.Position = UDim2.new(0.143474802, 0, 0.57125175, 0)
-ScriptsSection.Size = UDim2.new(0.289191306, 0, 0.854713857, 0)
+ScriptsSection.Position = UDim2.new(0.132826239, 0, 0.57125175, 0)
+ScriptsSection.Size = UDim2.new(0.265652508, 0, 0.854713857, 0)
 
-UICorner_4.CornerRadius = UDim.new(0, 15)
-UICorner_4.Parent = ScriptsSection
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = ScriptsSection
 
 Filler.Name = "Filler"
 Filler.Parent = ScriptsSection
+Filler.AnchorPoint = Vector2.new(0.5, 0.5)
 Filler.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Filler.BorderSizePixel = 0
-Filler.Position = UDim2.new(0, 0, -0.0195206348, 0)
-Filler.Size = UDim2.new(1.00000012, 0, 0.0762834996, 0)
+Filler.Position = UDim2.new(0.502100825, 0, 0.015922375, 0)
+Filler.Size = UDim2.new(0.995798588, 0, 0.0762834996, 0)
 
 Buttons.Name = "Buttons"
 Buttons.Parent = ScriptsSection
@@ -123,7 +85,7 @@ HomePageButton.TextScaled = true
 HomePageButton.TextSize = 25.000
 HomePageButton.TextWrapped = true
 
-UICorner_5.Parent = HomePageButton
+UICorner_3.Parent = HomePageButton
 
 Script1Button.Name = "Script1Button"
 Script1Button.Parent = Buttons
@@ -138,7 +100,7 @@ Script1Button.TextScaled = true
 Script1Button.TextSize = 25.000
 Script1Button.TextWrapped = true
 
-UICorner_6.Parent = Script1Button
+UICorner_4.Parent = Script1Button
 
 ScriptsMain.Name = "ScriptsMain"
 ScriptsMain.Parent = ScriptHubFrame
@@ -152,11 +114,12 @@ Scripts.Parent = ScriptsMain
 
 HomePage.Name = "HomePage"
 HomePage.Parent = Scripts
+HomePage.AnchorPoint = Vector2.new(0.5, 0)
 HomePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HomePage.BackgroundTransparency = 1.000
 HomePage.ClipsDescendants = true
-HomePage.Position = UDim2.new(0.847432077, 0, 0.668112576, 0)
-HomePage.Size = UDim2.new(1, 0, 0.999999762, 0)
+HomePage.Position = UDim2.new(1.35120857, 0, 0.665581822, 0)
+HomePage.Size = UDim2.new(0.986405015, 0, 0.999999821, 0)
 
 Desc.Name = "Desc"
 Desc.Parent = HomePage
@@ -186,24 +149,154 @@ Credits.TextScaled = true
 Credits.TextSize = 30.000
 Credits.TextWrapped = true
 
+Title.Name = "Title"
+Title.Parent = HomePage
+Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.519637525, 0, 0.0647009015, 0)
+Title.Size = UDim2.new(0.350668907, 0, 0.111686774, 0)
+Title.Font = Enum.Font.Gotham
+Title.Text = "Home"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 27.000
+Title.TextWrapped = true
+
+Title_Player.Name = "Title_Player"
+Title_Player.Parent = Border
+Title_Player.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_Player.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_Player.ClipsDescendants = true
+Title_Player.Position = UDim2.new(0.500852525, 0, 0.0730893388, 0)
+Title_Player.Size = UDim2.new(1.00000012, 0, 0.14161095, 0)
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = Title_Player
+
+PlayerImg.Name = "PlayerImg"
+PlayerImg.Parent = Title_Player
+PlayerImg.AnchorPoint = Vector2.new(0.5, 0.5)
+PlayerImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImg.BackgroundTransparency = 1.000
+PlayerImg.Position = UDim2.new(0.0493216515, 0, 0.49253732, 0)
+PlayerImg.Size = UDim2.new(0.0571774617, 0, 0.76119405, 0)
+PlayerImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_6.CornerRadius = UDim.new(3, 0)
+UICorner_6.Parent = PlayerImg
+
+PlayerUsername.Name = "PlayerUsername"
+PlayerUsername.Parent = Title_Player
+PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
+PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.BackgroundTransparency = 1.000
+PlayerUsername.Position = UDim2.new(0.542010367, 0, 0.386992961, 0)
+PlayerUsername.Size = UDim2.new(0.911792755, 0, 0.538380206, 0)
+PlayerUsername.Font = Enum.Font.Gotham
+PlayerUsername.Text = "N/A"
+PlayerUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.TextScaled = true
+PlayerUsername.TextSize = 32.000
+PlayerUsername.TextWrapped = true
+PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
+
 Title_2.Name = "Title"
-Title_2.Parent = HomePage
+Title_2.Parent = Title_Player
 Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
 Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.BackgroundTransparency = 1.000
-Title_2.Position = UDim2.new(0.519637525, 0, 0.0647009015, 0)
-Title_2.Size = UDim2.new(0.350668907, 0, 0.111686774, 0)
+Title_2.Position = UDim2.new(0.155818626, 0, 0.701492548, 0)
+Title_2.Size = UDim2.new(0.140272155, 0, 0.347601146, 0)
 Title_2.Font = Enum.Font.Gotham
-Title_2.Text = "Home"
+Title_2.Text = "Rose Hub | Exploits"
 Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.TextScaled = true
-Title_2.TextSize = 27.000
+Title_2.TextSize = 14.000
 Title_2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Title_Player
+Close.AnchorPoint = Vector2.new(0.5, 0.5)
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.970696688, 0, 0.492270857, 0)
+Close.Size = UDim2.new(0, 48, 0, 35)
+Close.Font = Enum.Font.Gotham
+Close.Text = "-"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = Title_Player
+Open.AnchorPoint = Vector2.new(0.5, 0.5)
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.916893601, 0, 0.492270857, 0)
+Open.Size = UDim2.new(0, 48, 0, 35)
+Open.Font = Enum.Font.Gotham
+Open.Text = "+"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
 
 -- Scripts:
 
-local function ENGAAV_fake_script() -- ScriptHubFrame.Draggable 
-	local script = Instance.new('LocalScript', ScriptHubFrame)
+local function JYKPGZZ_fake_script() -- ScriptHubGui.Main 
+	local script = Instance.new('LocalScript', ScriptHubGui)
+
+	-- Variables
+	
+	local Home = script.Parent.Border.ScriptHubFrame.ScriptsSection.Buttons.HomePageButton
+	local Hub = script.Parent.Border.ScriptHubFrame
+	local Closebutton = script.Parent.Border.Title_Player.Close
+	local Openbutton = script.Parent.Border.Title_Player.Open
+	local Script1 = script.Parent.Border.ScriptHubFrame.ScriptsSection.Buttons.Script1Button
+	local Homepage = script.Parent.Border.ScriptHubFrame.ScriptsMain.Scripts.HomePage
+	
+	-- Code
+	
+	Script1.MouseButton1Click:Connect(function()
+		Homepage:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	Home.MouseButton1Click:Connect(function()
+		Homepage:TweenSize(UDim2.new(1, 0, 1, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	Closebutton.MouseButton1Click:Connect(function()
+		Hub:TweenPosition(UDim2.new(0.501, 0,-0.357, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+	
+	Openbutton.MouseButton1Click:Connect(function()
+		Hub:TweenPosition(UDim2.new(0.5, 0,0.498, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
+	end)
+end
+coroutine.wrap(JYKPGZZ_fake_script)()
+local function XHJKZT_fake_script() -- PlayerImg.UserProfile 
+	local script = Instance.new('LocalScript', PlayerImg)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local imageLabel = script.Parent
+	imageLabel.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(XHJKZT_fake_script)()
+local function HSUNF_fake_script() -- PlayerUsername.UserName 
+	local script = Instance.new('LocalScript', PlayerUsername)
+
+	local Frame = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	Frame.Text = player.Name
+end
+coroutine.wrap(HSUNF_fake_script)()
+local function UIFNFJ_fake_script() -- Border.Draggable 
+	local script = Instance.new('LocalScript', Border)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -240,43 +333,4 @@ local function ENGAAV_fake_script() -- ScriptHubFrame.Draggable
 		end
 	end)
 end
-coroutine.wrap(ENGAAV_fake_script)()
-local function DEUWOVS_fake_script() -- PlayerImg.UserProfile 
-	local script = Instance.new('LocalScript', PlayerImg)
-
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local imageLabel = script.Parent
-	imageLabel.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-end
-coroutine.wrap(DEUWOVS_fake_script)()
-local function TCXTU_fake_script() -- PlayerUsername.UserName 
-	local script = Instance.new('LocalScript', PlayerUsername)
-
-	local Frame = script.Parent
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	
-	Frame.Text = player.Name
-end
-coroutine.wrap(TCXTU_fake_script)()
-local function BUXUUW_fake_script() -- ScriptHubGui.Main 
-	local script = Instance.new('LocalScript', ScriptHubGui)
-
-	-- Variables
-	
-	local Home = script.Parent.ScriptHubFrame.ScriptsSection.Buttons.HomePageButton
-	local Script1 = script.Parent.ScriptHubFrame.ScriptsSection.Buttons.Script1Button
-	local Homepage = script.Parent.ScriptHubFrame.ScriptsMain.Scripts.HomePage
-	
-	-- Code
-	
-	Script1.MouseButton1Click:Connect(function()
-		Homepage:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
-	end)
-	
-	Home.MouseButton1Click:Connect(function()
-		Homepage:TweenSize(UDim2.new(1, 0, 1, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
-	end)
-end
-coroutine.wrap(BUXUUW_fake_script)()
+coroutine.wrap(UIFNFJ_fake_script)()
