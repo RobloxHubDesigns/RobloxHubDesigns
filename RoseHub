@@ -269,7 +269,7 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function AAOJZM_fake_script() -- ScriptHubGui.Main 
+local function ZQUC_fake_script() -- ScriptHubGui.Main 
 	local script = Instance.new('LocalScript', ScriptHubGui)
 
 	-- Variables
@@ -289,8 +289,8 @@ local function AAOJZM_fake_script() -- ScriptHubGui.Main
 			Script1Page.Visible = false
 		end
 		
-		if Home.Visible == false then
-			Home.Visible = true
+		if Homepage.Visible == false then
+			Homepage.Visible = true
 		end
 	end)
 	
@@ -299,8 +299,8 @@ local function AAOJZM_fake_script() -- ScriptHubGui.Main
 			Script1Page.Visible = true
 		end
 		
-		if Home.Visible == true then
-			Home.Visible = false
+		if Homepage.Visible == true then
+			Homepage.Visible = false
 		end
 	end)
 	
@@ -312,16 +312,16 @@ local function AAOJZM_fake_script() -- ScriptHubGui.Main
 		Hub:TweenPosition(UDim2.new(0.5, 0,0.498, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
 	end)
 end
-coroutine.wrap(AAOJZM_fake_script)()
-local function NIDBCC_fake_script() -- Script1.LocalScript 
+coroutine.wrap(ZQUC_fake_script)()
+local function AZNR_fake_script() -- Script1.LocalScript 
 	local script = Instance.new('LocalScript', Script1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
 	end)
 end
-coroutine.wrap(NIDBCC_fake_script)()
-local function WQXJE_fake_script() -- PlayerImg.UserProfile 
+coroutine.wrap(AZNR_fake_script)()
+local function KXWOJ_fake_script() -- PlayerImg.UserProfile 
 	local script = Instance.new('LocalScript', PlayerImg)
 
 	local Players = game:GetService("Players")
@@ -329,8 +329,8 @@ local function WQXJE_fake_script() -- PlayerImg.UserProfile
 	local imageLabel = script.Parent
 	imageLabel.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(WQXJE_fake_script)()
-local function KEDMY_fake_script() -- PlayerUsername.UserName 
+coroutine.wrap(KXWOJ_fake_script)()
+local function MOKMRBT_fake_script() -- PlayerUsername.UserName 
 	local script = Instance.new('LocalScript', PlayerUsername)
 
 	local Frame = script.Parent
@@ -339,8 +339,8 @@ local function KEDMY_fake_script() -- PlayerUsername.UserName
 	
 	Frame.Text = player.Name
 end
-coroutine.wrap(KEDMY_fake_script)()
-local function EKEUK_fake_script() -- Border.Draggable 
+coroutine.wrap(MOKMRBT_fake_script)()
+local function FPHBE_fake_script() -- Border.Draggable 
 	local script = Instance.new('LocalScript', Border)
 
 	local UIS = game:GetService('UserInputService')
@@ -378,4 +378,4 @@ local function EKEUK_fake_script() -- Border.Draggable
 		end
 	end)
 end
-coroutine.wrap(EKEUK_fake_script)()
+coroutine.wrap(FPHBE_fake_script)()
