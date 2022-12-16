@@ -1,381 +1,307 @@
-local ScriptHubGui = Instance.new("ScreenGui")
-local Border = Instance.new("Frame")
-local ScriptHubFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local ScriptsSection = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local Filler = Instance.new("Frame")
-local Buttons = Instance.new("Folder")
-local HomePageButton = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local Script1Button = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local ScriptsMain = Instance.new("Frame")
-local Scripts = Instance.new("Folder")
-local HomePage = Instance.new("Frame")
-local Desc = Instance.new("TextLabel")
-local Credits = Instance.new("TextLabel")
-local Title = Instance.new("TextLabel")
-local ArsnenalPage = Instance.new("Frame")
-local Script1 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Title_Player = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local PlayerImg = Instance.new("ImageLabel")
-local UICorner_7 = Instance.new("UICorner")
-local PlayerUsername = Instance.new("TextLabel")
-local Title_2 = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local Open = Instance.new("TextButton")
+local ScriptHubGui = Instance.new('ScreenGui')
+local Main = Instance.new('LocalScript')
+local Border = Instance.new('Frame')
+local ScriptHubFrame = Instance.new('Frame')
+local UICorner = Instance.new('UICorner')
+local ScriptsSection = Instance.new('Frame')
+local UICorner_2 = Instance.new('UICorner')
+local Filler = Instance.new('Frame')
+local Buttons = Instance.new('Folder')
+local HomePageButton = Instance.new('TextButton')
+local UICorner_3 = Instance.new('UICorner')
+local Script1Button = Instance.new('TextButton')
+local UICorner_4 = Instance.new('UICorner')
+local ScriptsMain = Instance.new('Frame')
+local Scripts = Instance.new('Folder')
+local HomePage = Instance.new('Frame')
+local Desc = Instance.new('TextLabel')
+local Credits = Instance.new('TextLabel')
+local Title = Instance.new('TextLabel')
+local ArsnenalPage = Instance.new('Frame')
+local Script1 = Instance.new('TextButton')
+local UICorner_5 = Instance.new('UICorner')
+local LocalScript = Instance.new('LocalScript')
+local Script2 = Instance.new('TextButton')
+local UICorner_6 = Instance.new('UICorner')
+local LocalScript_2 = Instance.new('LocalScript')
+local Title_Player = Instance.new('Frame')
+local UICorner_7 = Instance.new('UICorner')
+local PlayerImg = Instance.new('ImageLabel')
+local UICorner_8 = Instance.new('UICorner')
+local UserProfile = Instance.new('LocalScript')
+local PlayerUsername = Instance.new('TextLabel')
+local UserName = Instance.new('LocalScript')
+local Title_2 = Instance.new('TextLabel')
+local Close = Instance.new('TextButton')
+local Open = Instance.new('TextButton')
+local Draggable = Instance.new('LocalScript')
 
---Properties:
+ScriptHubGui.Name = 'ScriptHubGui'
+ScriptHubGui.Parent = game:GetService('StarterGui')
 
-ScriptHubGui.Name = "ScriptHubGui"
-ScriptHubGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.Name = 'Main'
+Main.Parent = ScriptHubGui
 
-Border.Name = "Border"
-Border.Parent = ScriptHubGui
+Border.Name = 'Border'
 Border.AnchorPoint = Vector2.new(0.5, 0.5)
-Border.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Border.BackgroundTransparency = 1.000
+Border.Size = UDim2.new(0.5540000200271606, 0, 0.49300000071525574, 0)
 Border.ClipsDescendants = true
-Border.Position = UDim2.new(0.499644905, 0, 0.498323172, 0)
-Border.Size = UDim2.new(0.55400002, 0, 0.493000001, 0)
+Border.Position = UDim2.new(0.4996449053287506, 0, 0.4983231723308563, 0)
+Border.BackgroundTransparency = 1
+Border.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Border.Parent = ScriptHubGui
 
-ScriptHubFrame.Name = "ScriptHubFrame"
-ScriptHubFrame.Parent = Border
+ScriptHubFrame.Name = 'ScriptHubFrame'
 ScriptHubFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-ScriptHubFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-ScriptHubFrame.Position = UDim2.new(0.499644905, 0, 0.498323172, 0)
 ScriptHubFrame.Size = UDim2.new(1, 0, 1, 0)
+ScriptHubFrame.Position = UDim2.new(0.4996449053287506, 0, 0.4983231723308563, 0)
+ScriptHubFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ScriptHubFrame.Parent = Border
 
 UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = ScriptHubFrame
 
-ScriptsSection.Name = "ScriptsSection"
-ScriptsSection.Parent = ScriptHubFrame
+ScriptsSection.Name = 'ScriptsSection'
 ScriptsSection.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsSection.Size = UDim2.new(0.26565250754356384, 0, 0.8547138571739197, 0)
+ScriptsSection.Position = UDim2.new(0.13282623887062073, 0, 0.5712517499923706, 0)
 ScriptsSection.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-ScriptsSection.Position = UDim2.new(0.132826239, 0, 0.57125175, 0)
-ScriptsSection.Size = UDim2.new(0.265652508, 0, 0.854713857, 0)
+ScriptsSection.Parent = ScriptHubFrame
 
 UICorner_2.CornerRadius = UDim.new(0, 15)
 UICorner_2.Parent = ScriptsSection
 
-Filler.Name = "Filler"
-Filler.Parent = ScriptsSection
+Filler.Name = 'Filler'
 Filler.AnchorPoint = Vector2.new(0.5, 0.5)
-Filler.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Filler.Size = UDim2.new(0.9957985877990723, 0, 0.07628349959850311, 0)
+Filler.Position = UDim2.new(0.5021008253097534, 0, 0.01592237502336502, 0)
 Filler.BorderSizePixel = 0
-Filler.Position = UDim2.new(0.502100825, 0, 0.015922375, 0)
-Filler.Size = UDim2.new(0.995798588, 0, 0.0762834996, 0)
+Filler.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Filler.Parent = ScriptsSection
 
-Buttons.Name = "Buttons"
+Buttons.Name = 'Buttons'
 Buttons.Parent = ScriptsSection
 
-HomePageButton.Name = "HomePageButton"
-HomePageButton.Parent = Buttons
-HomePageButton.AnchorPoint = Vector2.new(0.5, 0.5)
-HomePageButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-HomePageButton.Position = UDim2.new(0.497163534, 0, 0.0658127218, 0)
-HomePageButton.Size = UDim2.new(0.765363157, 0, 0.093998611, 0)
-HomePageButton.Font = Enum.Font.Gotham
-HomePageButton.Text = "Home"
-HomePageButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-HomePageButton.TextScaled = true
-HomePageButton.TextSize = 25.000
+HomePageButton.Name = 'HomePageButton'
 HomePageButton.TextWrapped = true
+HomePageButton.TextScaled = true
+HomePageButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+HomePageButton.AnchorPoint = Vector2.new(0.5, 0.5)
+HomePageButton.Size = UDim2.new(0.7653631567955017, 0, 0.09399861097335815, 0)
+HomePageButton.TextSize = 25
+HomePageButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomePageButton.Text = 'Home'
+HomePageButton.Font = Enum.Font.Gotham
+HomePageButton.Position = UDim2.new(0.4971635341644287, 0, 0.06581272184848785, 0)
+HomePageButton.Parent = Buttons
 
 UICorner_3.Parent = HomePageButton
 
-Script1Button.Name = "Script1Button"
-Script1Button.Parent = Buttons
-Script1Button.AnchorPoint = Vector2.new(0.5, 0.5)
-Script1Button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Script1Button.Position = UDim2.new(0.497163534, 0, 0.184759781, 0)
-Script1Button.Size = UDim2.new(0.765363157, 0, 0.093998611, 0)
-Script1Button.Font = Enum.Font.Gotham
-Script1Button.Text = "Script1"
-Script1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script1Button.TextScaled = true
-Script1Button.TextSize = 25.000
+Script1Button.Name = 'Script1Button'
 Script1Button.TextWrapped = true
+Script1Button.TextScaled = true
+Script1Button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Script1Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Script1Button.Size = UDim2.new(0.7653631567955017, 0, 0.09399861097335815, 0)
+Script1Button.TextSize = 25
+Script1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script1Button.Text = 'Arsenal'
+Script1Button.Font = Enum.Font.Gotham
+Script1Button.Position = UDim2.new(0.4971635341644287, 0, 0.18475978076457977, 0)
+Script1Button.Parent = Buttons
 
 UICorner_4.Parent = Script1Button
 
-ScriptsMain.Name = "ScriptsMain"
-ScriptsMain.Parent = ScriptHubFrame
+ScriptsMain.Name = 'ScriptsMain'
 ScriptsMain.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsMain.Size = UDim2.new(0.7420336604118347, 0, 0.8550233840942383, 0)
+ScriptsMain.BackgroundTransparency = 1
 ScriptsMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScriptsMain.BackgroundTransparency = 1.000
-ScriptsMain.Size = UDim2.new(0.74203366, 0, 0.855023384, 0)
+ScriptsMain.Parent = ScriptHubFrame
 
-Scripts.Name = "Scripts"
+Scripts.Name = 'Scripts'
 Scripts.Parent = ScriptsMain
 
-HomePage.Name = "HomePage"
-HomePage.Parent = Scripts
+HomePage.Name = 'HomePage'
 HomePage.AnchorPoint = Vector2.new(0.5, 0)
-HomePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HomePage.BackgroundTransparency = 1.000
+HomePage.Size = UDim2.new(0.9864050149917603, 0, 0.9999998211860657, 0)
 HomePage.ClipsDescendants = true
-HomePage.Position = UDim2.new(1.35120857, 0, 0.665581822, 0)
-HomePage.Size = UDim2.new(0.986405015, 0, 0.999999821, 0)
 HomePage.Visible = false
+HomePage.Position = UDim2.new(1.3512085676193237, 0, 0.6655818223953247, 0)
+HomePage.BackgroundTransparency = 1
+HomePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomePage.Parent = Scripts
 
-Desc.Name = "Desc"
-Desc.Parent = HomePage
-Desc.AnchorPoint = Vector2.new(0.5, 0.5)
-Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Desc.BackgroundTransparency = 1.000
-Desc.Position = UDim2.new(0.519637525, 0, 0.477042556, 0)
-Desc.Size = UDim2.new(0.898791552, 0, 0.422993541, 0)
-Desc.Font = Enum.Font.Gotham
-Desc.Text = "Thank you for using this Hub! This was made for someone that requested me to make a script hub! If you wish to get one yourself then DM me at TinyHub#0461. Enjoy this hub!"
-Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
-Desc.TextScaled = true
-Desc.TextSize = 30.000
+Desc.Name = 'Desc'
 Desc.TextWrapped = true
+Desc.TextScaled = true
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.AnchorPoint = Vector2.new(0.5, 0.5)
+Desc.Size = UDim2.new(0.8987915515899658, 0, 0.422993540763855, 0)
+Desc.TextSize = 30
+Desc.Text = 'Thank you for using this Hub! This was made for someone that requested me to make a script hub! If you wish to get one yourself then DM me at TinyHub#0461. Enjoy this hub!'
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.Font = Enum.Font.Gotham
+Desc.Position = UDim2.new(0.5196375250816345, 0, 0.477042555809021, 0)
+Desc.BackgroundTransparency = 1
+Desc.Parent = HomePage
 
-Credits.Name = "Credits"
-Credits.Parent = HomePage
-Credits.AnchorPoint = Vector2.new(0.5, 0.5)
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BackgroundTransparency = 1.000
-Credits.Position = UDim2.new(0.519637525, 0, 0.954085231, 0)
-Credits.Size = UDim2.new(0.348726839, 0, 0.0914677307, 0)
-Credits.Font = Enum.Font.Gotham
-Credits.Text = "TinyHub#0461"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextScaled = true
-Credits.TextSize = 30.000
+Credits.Name = 'Credits'
 Credits.TextWrapped = true
+Credits.TextScaled = true
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits.Size = UDim2.new(0.3487268388271332, 0, 0.0914677307009697, 0)
+Credits.TextSize = 30
+Credits.Text = 'TinyHub#0461'
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.Font = Enum.Font.Gotham
+Credits.Position = UDim2.new(0.5196375250816345, 0, 0.9540852308273315, 0)
+Credits.BackgroundTransparency = 1
+Credits.Parent = HomePage
 
-Title.Name = "Title"
-Title.Parent = HomePage
-Title.AnchorPoint = Vector2.new(0.5, 0.5)
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.519637525, 0, 0.0647009015, 0)
-Title.Size = UDim2.new(0.350668907, 0, 0.111686774, 0)
-Title.Font = Enum.Font.Gotham
-Title.Text = "Home"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextScaled = true
-Title.TextSize = 27.000
+Title.Name = 'Title'
 Title.TextWrapped = true
+Title.TextScaled = true
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Title.Size = UDim2.new(0.35066890716552734, 0, 0.11168677359819412, 0)
+Title.TextSize = 27
+Title.Text = 'Home'
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.Font = Enum.Font.Gotham
+Title.Position = UDim2.new(0.5196375250816345, 0, 0.0647009015083313, 0)
+Title.BackgroundTransparency = 1
+Title.Parent = HomePage
 
-ArsnenalPage.Name = "ArsnenalPage"
-ArsnenalPage.Parent = Scripts
+ArsnenalPage.Name = 'ArsnenalPage'
+ArsnenalPage.Size = UDim2.new(1, 0, 0.9888004660606384, 0)
+ArsnenalPage.Position = UDim2.new(0.8447409272193909, 0, 0.6744394302368164, 0)
+ArsnenalPage.BackgroundTransparency = 1
 ArsnenalPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ArsnenalPage.BackgroundTransparency = 1.000
-ArsnenalPage.Position = UDim2.new(0.844740927, 0, 0.67443943, 0)
-ArsnenalPage.Size = UDim2.new(1, 0, 0.988800466, 0)
+ArsnenalPage.Parent = Scripts
 
-Script1.Name = "Script1"
-Script1.Parent = ArsnenalPage
-Script1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Script1.Position = UDim2.new(0.0423884317, 0, 0.0972846299, 0)
-Script1.Size = UDim2.new(0.92568332, 0, 0.130494669, 0)
-Script1.Font = Enum.Font.Gotham
-Script1.Text = "PWNERHUB | Mobile + Pc"
-Script1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script1.TextScaled = true
-Script1.TextSize = 14.000
+Script1.Name = 'Script1'
 Script1.TextWrapped = true
+Script1.TextScaled = true
+Script1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Script1.Size = UDim2.new(0.925683319568634, 0, 0.13049466907978058, 0)
+Script1.TextSize = 14
+Script1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script1.Text = 'PWNERHUB | Mobile'
+Script1.Font = Enum.Font.Gotham
+Script1.Position = UDim2.new(0.0423884317278862, 0, 0.09728462994098663, 0)
+Script1.Parent = ArsnenalPage
 
 UICorner_5.CornerRadius = UDim.new(0, 25)
 UICorner_5.Parent = Script1
 
-Title_Player.Name = "Title_Player"
-Title_Player.Parent = Border
+LocalScript.Parent = Script1
+
+Script2.Name = 'Script2'
+Script2.TextWrapped = true
+Script2.TextScaled = true
+Script2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Script2.Size = UDim2.new(0.925683319568634, 0, 0.13049466907978058, 0)
+Script2.TextSize = 14
+Script2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script2.Text = 'aimhook.xyz | Pc'
+Script2.Font = Enum.Font.Gotham
+Script2.Position = UDim2.new(0.0423884317278862, 0, 0.24577169120311737, 0)
+Script2.Parent = ArsnenalPage
+
+UICorner_6.CornerRadius = UDim.new(0, 25)
+UICorner_6.Parent = Script2
+
+LocalScript_2.Parent = Script2
+
+Title_Player.Name = 'Title_Player'
 Title_Player.AnchorPoint = Vector2.new(0.5, 0.5)
-Title_Player.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_Player.Size = UDim2.new(1.0000001192092896, 0, 0.14161095023155212, 0)
 Title_Player.ClipsDescendants = true
-Title_Player.Position = UDim2.new(0.500852525, 0, 0.0730893388, 0)
-Title_Player.Size = UDim2.new(1.00000012, 0, 0.14161095, 0)
+Title_Player.Position = UDim2.new(0.5008525252342224, 0, 0.07308933883905411, 0)
+Title_Player.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_Player.Parent = Border
 
-UICorner_6.CornerRadius = UDim.new(0, 15)
-UICorner_6.Parent = Title_Player
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = Title_Player
 
-PlayerImg.Name = "PlayerImg"
-PlayerImg.Parent = Title_Player
+PlayerImg.Name = 'PlayerImg'
+PlayerImg.Position = UDim2.new(0.049321651458740234, 0, 0.49253731966018677, 0)
 PlayerImg.AnchorPoint = Vector2.new(0.5, 0.5)
+PlayerImg.Image = 'rbxasset://textures/ui/GuiImagePlaceholder.png'
+PlayerImg.Size = UDim2.new(0.05717746168375015, 0, 0.7611940503120422, 0)
+PlayerImg.BackgroundTransparency = 1
 PlayerImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerImg.BackgroundTransparency = 1.000
-PlayerImg.Position = UDim2.new(0.0493216515, 0, 0.49253732, 0)
-PlayerImg.Size = UDim2.new(0.0571774617, 0, 0.76119405, 0)
-PlayerImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+PlayerImg.Parent = Title_Player
 
-UICorner_7.CornerRadius = UDim.new(3, 0)
-UICorner_7.Parent = PlayerImg
+UICorner_8.CornerRadius = UDim.new(3, 0)
+UICorner_8.Parent = PlayerImg
 
-PlayerUsername.Name = "PlayerUsername"
-PlayerUsername.Parent = Title_Player
-PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
-PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUsername.BackgroundTransparency = 1.000
-PlayerUsername.Position = UDim2.new(0.542010367, 0, 0.386992961, 0)
-PlayerUsername.Size = UDim2.new(0.911792755, 0, 0.538380206, 0)
-PlayerUsername.Font = Enum.Font.Gotham
-PlayerUsername.Text = "N/A"
-PlayerUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUsername.TextScaled = true
-PlayerUsername.TextSize = 32.000
+UserProfile.Name = 'UserProfile'
+UserProfile.Parent = PlayerImg
+
+PlayerUsername.Name = 'PlayerUsername'
 PlayerUsername.TextWrapped = true
+PlayerUsername.TextScaled = true
+PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
 PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
+PlayerUsername.Size = UDim2.new(0.9117927551269531, 0, 0.5383802056312561, 0)
+PlayerUsername.TextSize = 32
+PlayerUsername.Text = 'N/A'
+PlayerUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUsername.Font = Enum.Font.Gotham
+PlayerUsername.Position = UDim2.new(0.5420103669166565, 0, 0.3869929611682892, 0)
+PlayerUsername.BackgroundTransparency = 1
+PlayerUsername.Parent = Title_Player
 
-Title_2.Name = "Title"
-Title_2.Parent = Title_Player
-Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.BackgroundTransparency = 1.000
-Title_2.Position = UDim2.new(0.155818626, 0, 0.701492548, 0)
-Title_2.Size = UDim2.new(0.140272155, 0, 0.347601146, 0)
-Title_2.Font = Enum.Font.Gotham
-Title_2.Text = "Rose Hub | Exploits"
-Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.TextScaled = true
-Title_2.TextSize = 14.000
+UserName.Name = 'UserName'
+UserName.Parent = PlayerUsername
+
+Title_2.Name = 'Title'
 Title_2.TextWrapped = true
+Title_2.TextScaled = true
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_2.Size = UDim2.new(0.14027215540409088, 0, 0.34760114550590515, 0)
+Title_2.TextSize = 14
+Title_2.Text = 'Rose Hub | Exploits'
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.Font = Enum.Font.Gotham
+Title_2.Position = UDim2.new(0.1558186262845993, 0, 0.7014925479888916, 0)
+Title_2.BackgroundTransparency = 1
+Title_2.Parent = Title_Player
 
-Close.Name = "Close"
-Close.Parent = Title_Player
-Close.AnchorPoint = Vector2.new(0.5, 0.5)
-Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close.BackgroundTransparency = 1.000
-Close.Position = UDim2.new(0.970696688, 0, 0.492270857, 0)
-Close.Size = UDim2.new(0, 48, 0, 35)
-Close.Font = Enum.Font.Gotham
-Close.Text = "-"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextScaled = true
-Close.TextSize = 14.000
+Close.Name = 'Close'
 Close.TextWrapped = true
+Close.TextScaled = true
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.AnchorPoint = Vector2.new(0.5, 0.5)
+Close.Size = UDim2.new(0, 48, 0, 35)
+Close.TextSize = 14
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.Text = '-'
+Close.Font = Enum.Font.Gotham
+Close.Position = UDim2.new(0.9706966876983643, 0, 0.4922708570957184, 0)
+Close.BackgroundTransparency = 1
+Close.Parent = Title_Player
 
-Open.Name = "Open"
-Open.Parent = Title_Player
-Open.AnchorPoint = Vector2.new(0.5, 0.5)
-Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Open.BackgroundTransparency = 1.000
-Open.Position = UDim2.new(0.916893601, 0, 0.492270857, 0)
-Open.Size = UDim2.new(0, 48, 0, 35)
-Open.Font = Enum.Font.Gotham
-Open.Text = "+"
-Open.TextColor3 = Color3.fromRGB(255, 255, 255)
-Open.TextScaled = true
-Open.TextSize = 14.000
+Open.Name = 'Open'
 Open.TextWrapped = true
+Open.TextScaled = true
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.AnchorPoint = Vector2.new(0.5, 0.5)
+Open.Size = UDim2.new(0, 48, 0, 35)
+Open.TextSize = 14
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.Text = '+'
+Open.Font = Enum.Font.Gotham
+Open.Position = UDim2.new(0.9168936014175415, 0, 0.4922708570957184, 0)
+Open.BackgroundTransparency = 1
+Open.Parent = Title_Player
 
--- Scripts:
+Draggable.Name = 'Draggable'
+Draggable.Parent = Border
 
-local function ZQUC_fake_script() -- ScriptHubGui.Main 
-	local script = Instance.new('LocalScript', ScriptHubGui)
-
-	-- Variables
-	
-	local Home = script.Parent.Border.ScriptHubFrame.ScriptsSection.Buttons.HomePageButton
-	local Hub = script.Parent.Border.ScriptHubFrame
-	local Closebutton = script.Parent.Border.Title_Player.Close
-	local Openbutton = script.Parent.Border.Title_Player.Open
-	local Script1 = script.Parent.Border.ScriptHubFrame.ScriptsSection.Buttons.Script1Button
-	local Script1Page = script.Parent.Border.ScriptHubFrame.ScriptsMain.Scripts.ArsnenalPage
-	local Homepage = script.Parent.Border.ScriptHubFrame.ScriptsMain.Scripts.HomePage
-	
-	-- Code
-	
-	Home.MouseButton1Click:Connect(function()
-		if Script1Page.Visible == true then
-			Script1Page.Visible = false
-		end
-		
-		if Homepage.Visible == false then
-			Homepage.Visible = true
-		end
-	end)
-	
-	Script1.MouseButton1Click:Connect(function()
-		if Script1Page.Visible == false then
-			Script1Page.Visible = true
-		end
-		
-		if Homepage.Visible == true then
-			Homepage.Visible = false
-		end
-	end)
-	
-	Closebutton.MouseButton1Click:Connect(function()
-		Hub:TweenPosition(UDim2.new(0.501, 0,-0.357, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
-	end)
-	
-	Openbutton.MouseButton1Click:Connect(function()
-		Hub:TweenPosition(UDim2.new(0.5, 0,0.498, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, false)
-	end)
-end
-coroutine.wrap(ZQUC_fake_script)()
-local function AZNR_fake_script() -- Script1.LocalScript 
-	local script = Instance.new('LocalScript', Script1)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
-	end)
-end
-coroutine.wrap(AZNR_fake_script)()
-local function KXWOJ_fake_script() -- PlayerImg.UserProfile 
-	local script = Instance.new('LocalScript', PlayerImg)
-
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local imageLabel = script.Parent
-	imageLabel.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-end
-coroutine.wrap(KXWOJ_fake_script)()
-local function MOKMRBT_fake_script() -- PlayerUsername.UserName 
-	local script = Instance.new('LocalScript', PlayerUsername)
-
-	local Frame = script.Parent
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	
-	Frame.Text = player.Name
-end
-coroutine.wrap(MOKMRBT_fake_script)()
-local function FPHBE_fake_script() -- Border.Draggable 
-	local script = Instance.new('LocalScript', Border)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(FPHBE_fake_script)()
+game:GetService('ContentProvider'):PreloadAsync({'rbxasset://textures/ui/GuiImagePlaceholder.png'})
